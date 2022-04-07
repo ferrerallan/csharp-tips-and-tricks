@@ -115,6 +115,14 @@ foreach (var item in grouped) {
 h2("serializing object...");
 string resultJSON= JsonConvert.SerializeObject(grouped);
 log(resultJSON);
+
+header("Extension methods");
+h2("extending strings..");
+string otherName = "Allan";
+log(otherName.addLastName());
+
+
 public record SoccerPlayer(string name, string teamName, int age);
+
 
 
